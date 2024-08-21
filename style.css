@@ -1,11 +1,28 @@
-body {
-    font-family: Arial, sans-serif;
+/* Basic Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
 }
 
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* If you want a background image instead */
+body {
+    background-image: url('../images/background.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire page */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Header Styling */
 header {
     background-color: #333;
     color: #fff;
@@ -13,6 +30,7 @@ header {
     text-align: center;
 }
 
+/* Navigation Styling */
 header nav ul {
     list-style: none;
     padding: 0;
@@ -28,6 +46,7 @@ header nav ul li a {
     text-decoration: none;
 }
 
+/* Main Content Styling */
 main {
     padding: 20px;
     max-width: 800px;
@@ -36,12 +55,12 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Footer Styling */
 footer {
     text-align: center;
     padding: 10px 0;
     background-color: #333;
     color: #fff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    position: relative; /* Changed from fixed to relative for better scrolling */
+    margin-top: 20px;
 }
